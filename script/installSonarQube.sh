@@ -32,7 +32,12 @@ echo "----->>>Update bash profile"
 echo "export PATH=\"\$HOME/Documents/sonar-scripts:\$PATH\"" >> ~/.bash_profile
 
 mkdir "sonar-scripts"
-#move sonar-scripts
+cd sonar-scripts
+wget https://raw.githubusercontent.com/kimio/tech-talk-ci/master/script/sonar-scripts/sonarStart.sh
+wget https://raw.githubusercontent.com/kimio/tech-talk-ci/master/script/sonar-scripts/sonarStop.sh
+wget https://raw.githubusercontent.com/kimio/tech-talk-ci/master/script/sonar-scripts/sonarRestart.sh
+
+cd ~/Documents
 
 # Download BigSql PostgreSQL
 echo "----->>>Downloading BigSql PostgreSQL"

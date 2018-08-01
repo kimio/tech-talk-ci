@@ -39,3 +39,5 @@ echo "----->>>Download Swift Sonar Script"
 wget https://raw.githubusercontent.com/Backelite/sonar-swift/master/sonar-swift-plugin/src/main/shell/run-sonar-swift.sh
 
 echo "Use sh run-sonar-swift.sh to run sonar-swift"
+source ~/.bash_profile
+sh sonarRestart.sh
