@@ -48,10 +48,52 @@ To run sonar-swift:
 2 - create sonar-project.properties
 3 - run 
 
-
 to more information:
 https://docs.sonarqube.org/display/SCAN/Analyzing+Source+Code
 
 ```
 sh installSonarSwift.sh
+```
+
+# TIPS #
+
+### If you only want to test, use ngrok \o/ ###
+https://ngrok.com
+
+## How to open Jenkins ##
+```
+jenkinsStart
+```
+Open the adress http://localhost:8080 or create a tunnel using ngrok
+https://ngrok.com/product
+
+## How to open GitLab ##
+Start Docker
+Open the adress http://localhost:8050
+
+## How to use Sonar Qube##
+
+To Start
+```
+sh sonarStart.sh
+```
+
+To Stop
+```
+sh sonarStop.sh
+```
+
+To Restart
+```
+sh sonarRestart.sh
+```
+
+Open the adress http://localhost:9000
+
+Maybe you have swift project, then open the folder swift project that contains sonar-project.properties and run sonar-swift
+
+```
+cd <SWIFT-PROJECT FOLDER>
+sh run-sonar-swift.sh
+
 ```
