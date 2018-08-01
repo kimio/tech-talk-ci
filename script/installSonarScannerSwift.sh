@@ -32,14 +32,10 @@ wget https://github.com/Backelite/sonar-swift/releases/download/0.3.7/backelite-
 echo "----->>>Move to plugin folder"
 mv backelite-sonar-swift-plugin-0.3.7.jar sonarqube-7.2.1/extensions/plugins
 
-echo "----->>>Create Sonar script folder"
-mkdir "sonar-scripts"
+echo "----->>>Open Sonar script folder"
 cd sonar-scripts
 
 echo "----->>>Download Swift Sonar Script"
 wget https://raw.githubusercontent.com/Backelite/sonar-swift/master/sonar-swift-plugin/src/main/shell/run-sonar-swift.sh
-
-echo "----->>>Update bash profile"
-echo "export PATH=\"\$HOME/Documents/sonar-scripts:\$PATH\"" >> ~/.bash_profile
 
 echo "Use sh run-sonar-swift.sh to run sonar-swift"
