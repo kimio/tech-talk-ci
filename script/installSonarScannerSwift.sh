@@ -11,11 +11,14 @@ cd ../
 echo "----->>>Install Swiftlint"
 brew install swiftlint
 
+echo "----->>>Install java"
+brew cask install java
+
 echo "----->>>Install Tailor"
 brew install tailor
 
 echo "----->>>Install Slather"
-gem install slather
+sudo gem install slather
 
 echo "----->>>Install pip"
 brew install python@2
