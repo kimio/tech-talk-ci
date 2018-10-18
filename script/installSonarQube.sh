@@ -3,17 +3,17 @@ cd ~/Documents
 
 # Install SonarQube
 brew install wget
-echo "----->>>Downloading SonarQube 7.3 and unzip"
-wget https://binaries.sonarsource.com/CommercialDistribution/sonarqube-developer/sonarqube-developer-7.3.zip
-unzip sonarqube-developer-7.3.zip
+echo "----->>>Downloading SonarQube 6.7.5 and unzip"
+wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-6.7.5.zip
+unzip sonarqube-6.7.5.zip
 
 echo "----->>>Update SonarQube configuration"
-echo sonar.jdbc.url=jdbc:postgresql://localhost/postgres >> $HOME/Documents/sonarqube-7.3/conf/sonar.properties
-echo sonar.jdbc.username=postgres >> $HOME/Documents/sonarqube-7.3/conf/sonar.properties
-echo sonar.jdbc.password=123456 >> $HOME/Documents/sonarqube-7.3/conf/sonar.properties
+echo sonar.jdbc.url=jdbc:postgresql://localhost/postgres >> $HOME/Documents/sonarqube-6.7.5/conf/sonar.properties
+echo sonar.jdbc.username=postgres >> $HOME/Documents/sonarqube-6.7.5/conf/sonar.properties
+echo sonar.jdbc.password=123456 >> $HOME/Documents/sonarqube-6.7.5/conf/sonar.properties
 
-echo "----->>>To Start SonarQube - sh sonarqube-7.3/bin/macosx-universal-64/sonar.sh start"
-echo "----->>>To Stop SonarQube - sh sonarqube-7.3/bin/macosx-universal-64/sonar.sh stop"
+echo "----->>>To Start SonarQube - sh \$HOME/Documents/sonarqube-6.7.5/bin/macosx-universal-64/sonar.sh start"
+echo "----->>>To Stop SonarQube - sh \$HOME/Documents/sonarqube-6.7.5/bin/macosx-universal-64/sonar.sh stop"
 
 # Openning
 echo "----->>>To Open SonarQube use"
