@@ -33,7 +33,7 @@ echo "----->>>Downloading Sonar Swift Plugin"
 wget https://github.com/Backelite/sonar-swift/releases/download/0.3.7/backelite-sonar-swift-plugin-0.3.7.jar
 
 echo "----->>>Move to plugin folder"
-mv backelite-sonar-swift-plugin-0.3.7.jar sonarqube-7.2.1/extensions/plugins
+mv backelite-sonar-swift-plugin-0.3.7.jar sonarqube-7.3/extensions/plugins
 
 echo "----->>>Open Sonar script folder"
 cd sonar-scripts

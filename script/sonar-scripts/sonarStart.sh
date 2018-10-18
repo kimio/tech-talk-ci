@@ -1,1 +1,1 @@
-sh $HOME/Documents/sonarqube-7.2.1/bin/macosx-universal-64/sonar.sh start
+sh $HOME/Documents/sonarqube-7.3/bin/macosx-universal-64/sonar.sh start
