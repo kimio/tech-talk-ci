@@ -21,8 +21,8 @@ echo "open \"http://localhost:9000\""
 
 # Install SonarQube Scanner
 echo "----->>>Downloading Sonar Scanner and unzip"
-wget https://github.com/SonarSource/sonar-scanner-cli/archive/3.2.0.1227.zip
-unzip 3.2.0.1227.zip
+wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-3.2.0.1227-macosx.zip
+unzip sonar-scanner-cli-3.2.0.1227-macosx.zip
 
 echo "# SONAR-SCANNER" >> ~/.bash_profile
 echo "export PATH=\"\$HOME/Documents/sonar-scanner-3.2.0.1227-macosx/bin:\$PATH\"" >> ~/.bash_profile
